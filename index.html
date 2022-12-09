@@ -7,6 +7,26 @@
     <title>Vite App</title>
   </head>
   <body>
+    
+    <main class="container" id="formulario">
+    <h1>DETALHES DO PAGAMENTO</h1>
+    <section class="grid">
+
+      <form class="consultarUsuario">
+
+        <label>
+          Número do Cartão <input type="text" name="numeroCartao" required>
+          Nome: <input type="text" name="nome" required>
+          <div class="grid">
+          Data de Vencimento:<input type="date" name="data" required>
+          Codigo de Segurança(CCV):<input type="text" name="cvv" required>
+          </div>
+        </label>
+
+        <button class="btnConsultarUsuario">Confirmar</button>
+
+      </form>
+          
     <div class="credit-card">
       <div class="credit-card-front">
           <div class="card-type">
@@ -35,6 +55,10 @@
           </div>
       </div>
   </div>
+
+
+    </section>
+</main>
 
     <div id="app"></div>
     <script type="module" src="./js/main.js"></script>
