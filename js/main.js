@@ -1,7 +1,16 @@
 import '@picocss/pico'
 import '../css/cartao-credito.css';
 
-const botao = document.querySelector('.credit-card')
+const btnEnviar = document.querySelector('.credit-card')
+const inputNumero = document.querySelector('card-type')
+const inputNome = document.querySelector('card-holder')
+const inputData = document.querySelector('expiration')
+const inputCvv = document.querySelector('ccv-block')
+
+
+inputNumero.addEventListener('.credit-card',() =>{
+    
+})
 
 botao.addEventListener('click', () => {
     alert("voce esta clicando no cartão")
