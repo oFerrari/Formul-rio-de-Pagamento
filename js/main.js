@@ -12,6 +12,6 @@ inputNumero.addEventListener('.credit-card',() =>{
     
 })
 
-botao.addEventListener('click', () => {
+btnEnviar.addEventListener('click', () => {
     alert("voce esta clicando no cartão")
 })

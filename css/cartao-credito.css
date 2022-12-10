@@ -91,10 +91,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 15px;
-    
-     
 }
 
 .consultarUsuario{
@@ -102,8 +98,11 @@
     font-size: 15px;
 }
 
-
-
+.alinhar{
+    display: flex;
+    flex-direction: row ;   
+    gap: 15px;  
+}
 
 
 
