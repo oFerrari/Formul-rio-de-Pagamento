@@ -7,6 +7,8 @@
     background: linear-gradient(68.44deg, #392D69 0%, #58418A 18.54%, #7754AC 41.98%, #9668CD 66.98%, #B57BEE 100%);
     border-radius: 12px;
     transform-style: preserve-3d;
+    font-size: 12px;
+    font-family:sans-serif; 
 }
 
 .credit-card-front {
@@ -17,7 +19,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+    backface-visibility: visible;
 }
 
 .credit-card-front div {
