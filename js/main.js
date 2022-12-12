@@ -1,17 +1,23 @@
 import '@picocss/pico'
 import '../css/cartao-credito.css';
 
-const btnEnviar = document.querySelector('.credit-card')
-const inputNumero = document.querySelector('card-type')
-const inputNome = document.querySelector('card-holder')
-const inputData = document.querySelector('expiration')
-const inputCvv = document.querySelector('ccv-block')
+const btnEnviar = document.querySelector('.btnConsultarUsuario')
+
+const inputNumero = document.querySelector('#numeroCartao')
+const mostrarNumero = document.querySelector('.card-number')
+
+const inputNome = document.querySelector('#nome')
+const inputData = document.querySelector('#data')
+const inputCvv = document.querySelector('#ccv')
 
 
-inputNumero.addEventListener('.credit-card',() =>{
-    
+
+inputNumero.addEventListener('input',() =>{
+    mostrarNumero.textContent = inputNumero.value
+    if(mostrarNumero.textContent.length == 4 || mostrarNumero.textContent.length == 9 || mostrarNumero.textContent.length == 14){
+        inputNumero.value +=   ` `
+    }
 })
 
-btnEnviar.addEventListener('click', () => {
-    alert("voce esta clicando no cartão")
-})
+
+
